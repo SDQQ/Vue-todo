@@ -7,7 +7,6 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
-    "@firebase/database": "^0.11.0",
     "axios": "^0.21.1",
     "core-js": "^3.6.5",
     "firebase": "^9.0.0-beta.7",

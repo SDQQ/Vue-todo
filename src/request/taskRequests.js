@@ -1,20 +1,20 @@
 import {initializeApp} from 'firebase/app';
 import {getDatabase, get, ref, set, child, update, remove} from "firebase/database";
+import OPTIONS from "../../OPTIONS";
 
 initializeApp({
-  apiKey: "AIzaSyDwGS27BbfHEolJDUPRgdpHPYiqtwvFIgs",
-  authDomain: "vue-with-http-822a4.firebaseapp.com",
-  databaseURL: "https://vue-with-http-822a4-default-rtdb.europe-west1.firebasedatabase.app",
-  projectId: "vue-with-http-822a4",
-  storageBucket: "vue-with-http-822a4.appspot.com",
-  messagingSenderId: "515574911494",
-  appId: "1:515574911494:web:fd2dce2e1eeacea11b6987"
+  apiKey: OPTIONS.apiKey,
+  authDomain: OPTIONS.authDomain,
+  databaseURL:OPTIONS.databaseURL,
+  projectId: OPTIONS.projectId,
+  storageBucket: OPTIONS.storageBucket,
+  messagingSenderId: OPTIONS.messagingSenderId,
+  appId: OPTIONS.appId
 })
 
 class TaskRequests {
 
   constructor() {
-    // this.database = firebase.database().ref('/tasks');
     this.database = ref(getDatabase());
     this.db = getDatabase();
 
@@ -42,12 +42,6 @@ class TaskRequests {
       }
     }).catch((error) => {
       console.error(error);
-    });
-  }
-
-  watchTasks() {
-    this.database.orderByKey().on('value', snapshot => {
-      snapshot.val()
     });
   }
 
