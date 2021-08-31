@@ -1,7 +1,15 @@
 <template>
   <div class="container with-nav" v-cloak>
     <the-navbar></the-navbar>
-    <router-view/>
+<!--    <transition name="page" >-->
+<!--        <router-view/>-->
+<!--    </transition>-->
+
+    <router-view v-slot="{ Component }">
+      <transition name="page">
+        <component :is="Component"/>
+      </transition>
+    </router-view>
   </div>
 </template>
 

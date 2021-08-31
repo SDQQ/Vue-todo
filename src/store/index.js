@@ -1,5 +1,4 @@
 import { createStore } from 'vuex'
-import taskReq from "../request/taskRequests";
 
 
 export default createStore({

@@ -1,6 +1,7 @@
 import {createApp} from "vue";
 import App from "./App";
-import './theme.css'
+import './style/theme.css'
+import './style/animation.css'
 import router from "./router";
 import store from './store'
 
