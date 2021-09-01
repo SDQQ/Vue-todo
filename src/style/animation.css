@@ -15,6 +15,7 @@
 }
 
 .list-leave-active {
+
   transition: 1s all ease-in-out;
   opacity: 1;
   position: absolute;
@@ -29,6 +30,7 @@
   transform: translateX(-2000px);
 }
 .page-enter-active{
+  width: 100%;
   overflow: hidden;
   position: absolute;
   transition: 1s all;
@@ -40,6 +42,7 @@
   transform: translateX(0);
 }
 .page-leave-active{
+  width: 100%;
   overflow: hidden;
   position: absolute;
   transition: 1s all;

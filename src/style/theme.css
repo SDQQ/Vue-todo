@@ -198,9 +198,7 @@ h3 {
     transition: border 0.22s;
     border: 2px solid #42b983;
 }
-form.card{
-  width: 1000px;
-}
+
 
 .card {
     max-width: 1000px;
@@ -476,5 +474,8 @@ form.card{
   }
   .text-white{
     text-align: center;
+  }
+  form.card{
+    /*min-width: 100%;*/
   }
 }
