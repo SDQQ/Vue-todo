@@ -1,0 +1,60 @@
+
+.list-enter-from{
+  opacity: 0;
+}
+
+.list-enter-active{
+  transition: all 1.5s ease;
+}
+.list-enter-to{
+  opacity: 1;
+}
+
+.list-leave-from{
+
+}
+
+.list-leave-active {
+
+  transition: 1s all ease-in-out;
+  opacity: 1;
+  position: absolute;
+}
+.list-leave-to {
+  opacity: 0;
+  transform:translateX(1000px);
+
+}
+
+.page-enter-from{
+  transform: translateX(-2000px);
+}
+.page-enter-active{
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  transition: 1s all;
+}
+.page-enter-to{
+  transform: translateX(0);
+}
+.page-leave-from{
+  transform: translateX(0);
+}
+.page-leave-active{
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  transition: 1s all;
+}
+.page-leave-to{
+  transform: translateX(2000px);
+}
+
+
+/*.list-move {*/
+/*  transition: transform 1.8s;*/
+/*}*/
+
+/*enter-from > enter-active > enter-to*/
+
